@@ -1,1 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--primary-color: #f60f20;
+}
+/*Base styles*/
+/* Setting margin and padding of all to 0*/
+* {
+	box-sizing: border-box; /*Padding will be included in width, and doesn't elongate the elements*/
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: 'Poppins', monospace;
+	color: #111;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+p {
+	margin: 20px 0 10px;
+	font-size: 1.1rem;
+}
+section {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	padding: 100px;
+}
+
+/*Button Styles*/
+.btn {
+	cursor: pointer;
+	display: inline-block; /* To get margin to work*/
+	background: var(--primary-color);
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 30px;
+	margin: 20px 0;
+	border: 0;
+}
+
+.btn:hover {
+	transform : scale(0.98);
+}
+/*Logo styles*/
+.logo {
+	position: absolute; /*Take it out of flow of things*/
+	top: 30px;
+	left: 100px;
+	font-size: 2rem; /*Translates to 2*root font size*/
+	font-weight: 700;
+	z-index: 10; /*Higher the z-index, the closer it is to us(superimposes over other divs) - 
+	we do this because we want the logo to show up in the full screen nav as well*/
+}
+/*Nav Styles*/
+.toggle {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: var(--primary-color) url(../images/menu.png);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 20;
+	cursor: pointer;
+}
+.navigation {
+	display: none; /* Hide the navigation class by default */
+}
+/*Homepage Styles*/
+.home-content {
+	position: relative;
+	z-index: 10;
+	max-width: 600px; /* text going beyond goes to the new line */
+}
+
+.home-img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 110%;	
+}
