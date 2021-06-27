@@ -27,11 +27,17 @@ p {
 }
 section {
 	display: flex;
+	flex-direction: column;
 	height: 100vh;
 	align-items: center;
 	padding: 100px;
+	margin-top: 60px;
 }
 
+section.home {
+	flex-direction: row;
+	margin-top: 0;
+}
 /*Button Styles*/
 .btn {
 	cursor: pointer;
@@ -149,6 +155,15 @@ section {
 	bottom: 0;
 	right: 0;
 	height: 110%;	
+}
+
+/*Services page styles*/
+.services {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	text-align: center;
 }
 
 @media(max-width: 1068px) {
