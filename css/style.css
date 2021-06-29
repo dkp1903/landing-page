@@ -264,7 +264,7 @@ section.home {
 	width: 100%;
 }
 
-.contact-form row {
+.contact-form .row {
 	width: 100%;
 	display: flex;
 }
