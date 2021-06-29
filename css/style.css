@@ -180,7 +180,7 @@ section.home {
 .services .service:hover{
 	background: linear-gradient(90deg, #363EA0, #3278D8, #59BFD7);
 	border-radius: 20px;
-	box-shadow: 0 10px 30px linear-gradient(90deg, #363EA0, #3278D8, #59BFD7);
+	box-shadow: 0 10px 30px #363EA0;
 	transform: scale(1.1);
 }
 
@@ -201,6 +201,7 @@ section.home {
 .portfolio {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin-top: 20px;
 }
 
@@ -208,11 +209,37 @@ section.home {
 	position: relative;
 	width: 300px;
 	height: 300px;
-	margin: 5px;
+	margin: 4px;
 }
 .portfolio .item img {
 	width: 100%;
 	height: 100%;
+}
+
+.portfolio .item .action {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.portfolio .item:hover .action {
+	opacity: 1;
+}
+.portfolio .item .action a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none; /*To remove underline*/
+	border: 1px solid white;
+	padding: 5px 15px; /*Top-Bottom Left-Right*/
+
 }
 @media(max-width: 1068px) {
 	.home-img {
