@@ -372,6 +372,19 @@ section.home {
 		padding: 30px 30px 20px;
 	}
 
+	
+}
+
+@media(max-width: 768px) {
+	.services {
+		grid-template-columns: 1fr;
+	}
+	.services .service { 
+		border-radius: 20px;
+		box-shadow: 0 10px 30px #363EA0;
+		transform: scale(1.1);
+	}
+
 	.contact-form .row {
 		flex-direction: column;
 	}
@@ -386,16 +399,5 @@ section.home {
 		width: 100%;
 		margin-top: 20px;
 		padding: 30px 30px 20px;
-	}
-}
-
-@media(max-width: 768px) {
-	.services {
-		grid-template-columns: 1fr;
-	}
-	.services .service { 
-		border-radius: 20px;
-		box-shadow: 0 10px 30px #363EA0;
-		transform: scale(1.1);
 	}
 }
