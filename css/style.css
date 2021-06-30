@@ -2,6 +2,7 @@
 
 :root {
 	--primary-color: #f60f20;
+	--blue: #363EA0;
 }
 /*Base styles*/
 /* Setting margin and padding of all to 0*/
@@ -178,7 +179,7 @@ section.home {
 	color: #dedede;
 }
 .services .service:hover{
-	background: linear-gradient(90deg, #363EA0, #3278D8, #59BFD7);
+	background: linear-gradient(90deg, var(--blue), #3278D8, #59BFD7);
 	border-radius: 20px;
 	box-shadow: 0 10px 30px #363EA0;
 	transform: scale(1.1);
