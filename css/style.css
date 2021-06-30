@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #f60f20;
+	--primary-color: #212324;
 	--blue: #363EA0;
 }
 /*Base styles*/
@@ -24,7 +24,7 @@ h1 {
 
 p {
 	margin: 20px 0 10px;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 }
 section {
 	display: flex;
@@ -175,15 +175,14 @@ section.home {
 	cursor: pointer;
 }
 
-.services .service:hover{
-	color: #dedede;
-}
+
 .services .service:hover{
 	background: linear-gradient(90deg, var(--blue), #3278D8, #59BFD7);
 	border-radius: 20px;
 	box-shadow: 0 10px 30px #363EA0;
 	transform: scale(1.1);
 	transition: 0.5s;
+	color: #dedede;
 }
 
 .services .service h2 {
@@ -191,6 +190,10 @@ section.home {
 	font-weight: 500;
 	margin-top: 20px;
 	color: #1b206e;
+}
+
+.services .service h2:hover {
+	color: #dedede;
 }
 
 
